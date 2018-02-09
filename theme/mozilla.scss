@@ -1,0 +1,52 @@
+/**
+ * Mozilla theme for reveal.js. Made by Tomáš Zelina from Mozilla.cz
+ *
+ * Based on white theme for reveal.js by Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "template/mixins";
+@import "template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://code.cdn.mozilla.net/fonts/zilla-slab.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Zilla Slab', Helvetica, sans-serif;
+$headingFont: 'Zilla Slab Highlight', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 700;
+$linkColor: #005E5E;//#2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+$selectionBackgroundColor: #000000;
+$selectionColor: #ffffff;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "template/theme";
+// ---------------------------------------------
